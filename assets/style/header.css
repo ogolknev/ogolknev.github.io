@@ -1,0 +1,40 @@
+@import './base.css';
+
+header {
+    background: var(--trnsp-light);
+    backdrop-filter: blur(2rem);
+
+    box-shadow: var(--shadow);
+
+    width: 100vw;
+    height: var(--header-h);
+
+    display: grid;
+    grid-template-areas: 'btn-menu title spprt';
+    grid-template-columns: var(--header-h) 1fr var(--header-h);
+    place-items: center;
+
+    position: fixed;
+}
+
+button.menu {
+    grid-area: btn-menu;
+}
+
+header > h1 {
+    grid-area: title;
+    background: var(--dark);
+    color: var(--text-light);
+
+    font-family: var(--font);
+
+    height: 100%;
+
+    padding-inline: 1rem;
+    display: grid;
+    place-items: center;
+}
+
+div.supportive {
+    grid-area: spprt;
+}

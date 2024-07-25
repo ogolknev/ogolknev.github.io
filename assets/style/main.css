@@ -1,0 +1,19 @@
+@import "./base.css";
+@import "./header.css";
+
+body{
+    margin: 0;
+    background: var(--bg);
+
+    height: 100vh;
+}
+
+main {
+    border: 0.1rem solid var(--dark);
+
+    height: 100%;
+    width: var(--main-w);
+
+    margin-inline: auto;
+}
+
