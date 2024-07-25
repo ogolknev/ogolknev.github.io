@@ -1,15 +1,35 @@
 @import "./base.css";
 @import "./header.css";
+@import "./menu.css";
 
-body{
+body {
     margin: 0;
     background: var(--bg);
 
     height: 100vh;
+    width: 100vw;
+    z-index: -100;
+    overflow-y: scroll;
+    box-sizing: content-box;
 }
 
+body::-webkit-scrollbar {
+    width: 0.8rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: transparent;
+    box-shadow: none;
+}
+
+body::-webkit-scrollbar {}
+
+body::-webkit-scrollbar {}
+
+body::-webkit-scrollbar {}
+
 main {
-    border: 0.1rem solid var(--dark);
+    outline: 0.4rem solid var(--dark);
 
     height: 100%;
     width: var(--main-w);
@@ -17,3 +37,21 @@ main {
     margin-inline: auto;
 }
 
+section.about {
+    padding-top: var(--header-h);
+    height: calc(100% - var(--header-h));
+    /* overflow-y: visible; */
+}
+
+section.about::-webkit-scrollbar {
+    width: 12px; /* Ширина вертикальной полосы прокрутки */
+}
+
+section.about::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+section.about::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}

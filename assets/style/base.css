@@ -17,8 +17,11 @@
 
     --font: 'Courier New', Courier, monospace;
 
-    --shadow: 0.1rem 0 0.5rem 0 var(--trnsp-dark);
-
-    --main-w: 70%;
+    --shadow-down: 0.1rem 0 0.5rem 0 var(--trnsp-dark);
+    --shadow-right: 0 0.1rem 0.5rem 0 var(--trnsp-dark);
+    --blur: blur(0.6rem);
+    
     --header-h: 3.5rem;
+    --menu-w: 40rem;
+    --main-w: 70%;
 }

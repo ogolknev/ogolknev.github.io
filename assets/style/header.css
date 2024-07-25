@@ -1,10 +1,6 @@
 @import './base.css';
 
 header {
-    background: var(--trnsp-light);
-    backdrop-filter: blur(2rem);
-
-    box-shadow: var(--shadow);
 
     width: 100vw;
     height: var(--header-h);
@@ -15,6 +11,8 @@ header {
     place-items: center;
 
     position: fixed;
+
+    z-index: 100;
 }
 
 button.menu {
@@ -28,11 +26,14 @@ header > h1 {
 
     font-family: var(--font);
 
-    height: 100%;
+    height: var(--header-h);
 
     padding-inline: 1rem;
     display: grid;
     place-items: center;
+
+    /* position: fixed;
+    top: 0; */
 }
 
 div.supportive {
